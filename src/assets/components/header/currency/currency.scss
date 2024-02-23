@@ -10,6 +10,11 @@
 	&__toggle {
 		display: flex;
 		align-items: center;
+		@include hover {
+			outline: 1px dashed var(--nobel);
+		}
+
+		outline-offset: 2px;
 	}
 
 	&__country-icon {
@@ -22,6 +27,16 @@
 		margin-left: 3px;
 		width: 8px;
 		height: 4px;
+		transition: rotate 150ms;
+	}
+}
+
+.currency:has(.currency-menu.active) {
+	.currency__arrow-icon {
+		rotate: 180deg;
+	}
+	.currency__toggle {
+		outline: 1px dashed var(--nobel);
 	}
 }
 

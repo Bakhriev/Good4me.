@@ -59,6 +59,13 @@
 		font-size: 16px;
 		line-height: 1.25;
 		color: var(--white);
+		transition: opacity 150ms;
+		@include hover {
+			opacity: 0.6;
+		}
+		&:active {
+			scale: 0.97;
+		}
 	}
 }
 
