@@ -1,5 +1,10 @@
 <div class="currency">
-	<button class="currency__toggle btn-reset">
+	<button
+		class="currency__toggle btn-reset"
+		aria-label="currency list"
+		aria-expanded="false"
+		aria-controls="currency-menu"
+	>
 		<svg class="currency__country-icon">
 			<use href="./assets/img/svg/sprite.svg#usa"></use>
 		</svg>
@@ -9,7 +14,7 @@
 		</svg>
 	</button>
 	<!-- Dropdown -->
-	<ul class="currency-menu list-reset">
+	<ul id="currency-menu" class="currency-menu list-reset">
 		<li>
 			<a href="#" class="currency-menu__link">EUR</a>
 		</li>
