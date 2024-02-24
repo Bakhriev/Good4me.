@@ -1,0 +1,75 @@
+.shipping {
+	padding-top: 140px;
+	@media screen and (max-width: 992px) {
+		padding-top: 60px;
+	}
+	&__container {
+		max-width: 1230px;
+		padding: 0 15px;
+		margin: 0 auto;
+		width: 100%;
+
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 50px;
+		@media screen and (max-width: 992px) {
+		}
+	}
+}
+
+.shipping-card {
+	max-width: 285px;
+	width: 100%;
+	@media screen and (max-width: 768px) {
+		max-width: 100%;
+	}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__icon-wrapper {
+		margin-bottom: 25px;
+		position: relative;
+		width: 70px;
+		height: 70px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			bottom: 0;
+			right: -13px;
+			width: 45px;
+			height: 45px;
+			border-radius: 100%;
+			background-color: var(--primary);
+		}
+	}
+
+	&__icon {
+		width: 70px;
+		height: 70px;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		font-family: var(--ff-primary);
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 1.3;
+		color: var(--black);
+		@media screen and (max-width: 992px) {
+			font-size: 22px;
+		}
+	}
+
+	&__text {
+		font-family: var(--ff-primary);
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.25;
+		text-align: center;
+		color: var(--nobel);
+	}
+}
