@@ -31,5 +31,8 @@
 		"dev": "gulp",
 		"build": "gulp build",
 		"preview": "gulp preview"
+	},
+	"dependencies": {
+		"swiper": "^11.0.6"
 	}
 }
